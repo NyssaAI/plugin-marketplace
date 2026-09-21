@@ -1,0 +1,6 @@
+# Prerequisites
+node_modules/
+.temp/
+*.log
+.DS_Store
+Thumbs.db
