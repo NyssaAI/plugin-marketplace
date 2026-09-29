@@ -27,7 +27,7 @@ Once added, install any listed plugin using the `@nyssaai` namespace:
 Examples:
 ```bash
 # Install the core NyssaAI skills catalog
-/plugin install skills@nyssaai
+/plugin install agent-skills@nyssaai
 
 # Install Compound Engineering workflow tools
 /plugin install compound-engineering@nyssaai
@@ -47,7 +47,7 @@ To refresh available plugins:
 
 | Plugin | Namespace / Install | Source | Description |
 | :--- | :--- | :--- | :--- |
-| **skills** | `skills@nyssaai` | [NyssaAI/skills](https://github.com/NyssaAI/skills) | Official agent skills catalog for NyssaAI workflows, guidelines, and tools. |
+| **agent-skills** | `agent-skills@nyssaai` | [NyssaAI/agent-skills](https://github.com/NyssaAI/agent-skills) | Foundational skills and conventions for Jeremy and NyssaAI's AI agents. |
 | **compound-engineering** | `compound-engineering@nyssaai` | [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin) | Brainstorm, plan, debug, review, and compound learnings with AI agents. |
 | **compound-knowledge** | `compound-knowledge@nyssaai` | [EveryInc/compound-knowledge-plugin](https://github.com/EveryInc/compound-knowledge-plugin) | Knowledge compounds. Brainstorm, plan, review, execute, and save learnings in a markdown vault. |
 

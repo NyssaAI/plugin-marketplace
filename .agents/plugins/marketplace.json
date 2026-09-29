@@ -5,12 +5,12 @@
   },
   "plugins": [
     {
-      "name": "skills",
+      "name": "agent-skills",
       "source": {
         "source": "git",
-        "url": "https://github.com/NyssaAI/skills.git"
+        "url": "https://github.com/NyssaAI/agent-skills.git"
       },
-      "version": "1.0.0",
+      "version": "0.1.0",
       "policy": {
         "installation": "AVAILABLE"
       },

@@ -9,12 +9,12 @@
   },
   "plugins": [
     {
-      "name": "skills",
-      "version": "1.0.0",
-      "description": "Official agent skills catalog for NyssaAI workflows, guidelines, and tools.",
+      "name": "agent-skills",
+      "version": "0.1.0",
+      "description": "Foundational skills and conventions for Jeremy and NyssaAI's AI agents.",
       "source": {
         "source": "url",
-        "url": "https://github.com/NyssaAI/skills.git"
+        "url": "https://github.com/NyssaAI/agent-skills.git"
       },
       "category": "productivity",
       "keywords": [
