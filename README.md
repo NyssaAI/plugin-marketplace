@@ -29,6 +29,9 @@ Examples:
 # Install the core NyssaAI skills catalog
 /plugin install agent-skills@nyssaai
 
+# Install Plugin Builder (requires access to its private repository)
+/plugin install plugin-builder@nyssaai
+
 # Install Compound Engineering workflow tools
 /plugin install compound-engineering@nyssaai
 
@@ -45,9 +48,14 @@ To refresh available plugins:
 
 ## Listed Plugins
 
+`plugin-builder` is publicly listed, but its source repository remains private.
+Installation requires GitHub authentication with access to `NyssaAI/plugin-builder`;
+the listing does not grant repository access.
+
 | Plugin | Namespace / Install | Source | Description |
 | :--- | :--- | :--- | :--- |
-| **agent-skills** | `agent-skills@nyssaai` | [NyssaAI/agent-skills](https://github.com/NyssaAI/agent-skills) | Foundational skills and conventions for Jeremy and NyssaAI's AI agents. |
+| **agent-skills 0.4.0** | `agent-skills@nyssaai` | [NyssaAI/agent-skills](https://github.com/NyssaAI/agent-skills) | Foundational skills and conventions for Jeremy and NyssaAI's AI agents. |
+| **plugin-builder 0.1.0** | `plugin-builder@nyssaai` | [NyssaAI/plugin-builder](https://github.com/NyssaAI/plugin-builder) (private) | Build, review, and evaluate agent plugins. Requires repository access. |
 | **compound-engineering** | `compound-engineering@nyssaai` | [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin) | Brainstorm, plan, debug, review, and compound learnings with AI agents. |
 | **compound-knowledge** | `compound-knowledge@nyssaai` | [EveryInc/compound-knowledge-plugin](https://github.com/EveryInc/compound-knowledge-plugin) | Knowledge compounds. Brainstorm, plan, review, execute, and save learnings in a markdown vault. |
 

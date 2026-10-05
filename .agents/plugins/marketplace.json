@@ -10,11 +10,23 @@
         "source": "git",
         "url": "https://github.com/NyssaAI/agent-skills.git"
       },
-      "version": "0.1.0",
+      "version": "0.4.0",
       "policy": {
         "installation": "AVAILABLE"
       },
       "category": "Productivity"
+    },
+    {
+      "name": "plugin-builder",
+      "version": "0.1.0",
+      "source": {
+        "source": "git",
+        "url": "https://github.com/NyssaAI/plugin-builder.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Development"
     },
     {
       "name": "compound-engineering",
