@@ -10,7 +10,7 @@
         "source": "git",
         "url": "https://github.com/NyssaAI/agent-skills.git"
       },
-      "version": "0.5.0",
+      "version": "0.6.0",
       "policy": {
         "installation": "AVAILABLE"
       },
@@ -18,7 +18,7 @@
     },
     {
       "name": "daily-tasks",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source": {
         "source": "git",
         "url": "https://github.com/NyssaAI/daily-tasks.git"

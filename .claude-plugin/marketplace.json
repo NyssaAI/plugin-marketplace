@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "agent-skills",
-      "version": "0.5.0",
+      "version": "0.6.0",
       "description": "Foundational skills and conventions for Jeremy and NyssaAI's AI agents.",
       "source": {
         "source": "url",
@@ -26,7 +26,7 @@
     },
     {
       "name": "daily-tasks",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source": {
         "source": "url",
         "url": "https://github.com/NyssaAI/daily-tasks.git"
