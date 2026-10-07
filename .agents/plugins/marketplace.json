@@ -7,7 +7,7 @@
     {
       "name": "agent-skills",
       "source": {
-        "source": "git",
+        "source": "url",
         "url": "https://github.com/NyssaAI/agent-skills.git"
       },
       "version": "0.6.0",
@@ -20,7 +20,7 @@
       "name": "daily-tasks",
       "version": "0.2.0",
       "source": {
-        "source": "git",
+        "source": "url",
         "url": "https://github.com/NyssaAI/daily-tasks.git"
       },
       "policy": { "installation": "AVAILABLE" },
@@ -30,7 +30,7 @@
       "name": "plugin-builder",
       "version": "0.1.0",
       "source": {
-        "source": "git",
+        "source": "url",
         "url": "https://github.com/NyssaAI/plugin-builder.git"
       },
       "policy": {
@@ -41,7 +41,7 @@
     {
       "name": "compound-engineering",
       "source": {
-        "source": "git",
+        "source": "url",
         "url": "https://github.com/EveryInc/compound-engineering-plugin.git"
       },
       "version": "3.24.0",

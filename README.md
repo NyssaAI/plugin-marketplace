@@ -8,7 +8,30 @@ Third-party entries are sourced from upstream repositories and are not vendored.
 
 ## Installation
 
-### 1. Register the Marketplace
+### Codex CLI
+
+For Codex CLI 0.160.1, use its native commands:
+
+```powershell
+codex plugin marketplace add https://github.com/NyssaAI/plugin-marketplace.git --json
+codex plugin marketplace upgrade nyssaai --json
+codex plugin list --marketplace nyssaai --available --json
+codex plugin add daily-tasks@nyssaai --json
+codex plugin add agent-skills@nyssaai --json
+```
+
+Repeating `plugin add` upgrades an installed entry. Catalogs use `source: "url"`
+for repository-root Git plugins; the CLI listing serializes that source as `git`,
+which is not a valid discriminator to copy back into this catalog. Subdirectory
+plugins retain `git-subdir` and `path`. See the
+[Codex marketplace format](https://developers.openai.com/plugins/build/plugins).
+
+Run `node --test test/catalog.test.mjs` with Codex installed to verify all entries
+are discoverable using an isolated profile. Set `CODEX_CLI_JS` to the installed
+`@openai/codex/bin/codex.js` when it is not under Windows APPDATA. This test does
+not install plugins or modify the user's Codex profile.
+
+### 1. Register the Marketplace (Claude Code)
 
 Add the NyssaAI marketplace to your agent:
 
