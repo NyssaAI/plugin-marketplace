@@ -18,7 +18,7 @@
     },
     {
       "name": "daily-tasks",
-      "version": "0.3.0",
+      "version": "0.3.2",
       "source": {
         "source": "url",
         "url": "https://github.com/NyssaAI/daily-tasks.git"
