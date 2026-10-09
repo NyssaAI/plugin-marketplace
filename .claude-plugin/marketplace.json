@@ -10,11 +10,12 @@
   "plugins": [
     {
       "name": "agent-skills",
-      "version": "0.6.0",
+      "version": "0.6.1",
       "description": "Foundational skills and conventions for Jeremy and NyssaAI's AI agents.",
       "source": {
         "source": "url",
-        "url": "https://github.com/NyssaAI/agent-skills.git"
+        "url": "https://github.com/NyssaAI/agent-skills.git",
+        "ref": "v0.6.1"
       },
       "category": "productivity",
       "keywords": [
@@ -32,10 +33,17 @@
         "url": "https://github.com/NyssaAI/daily-tasks.git"
       },
       "description": "Personal task management, milestones, delegation, daily plans and anytime check-ins using editable Markdown.",
-      "author": { "name": "NyssaAI" },
+      "author": {
+        "name": "NyssaAI"
+      },
       "homepage": "https://github.com/NyssaAI/daily-tasks",
       "category": "productivity",
-      "keywords": ["tasks", "daily-planning", "markdown", "nyssa"]
+      "keywords": [
+        "tasks",
+        "daily-planning",
+        "markdown",
+        "nyssa"
+      ]
     },
     {
       "name": "plugin-builder",

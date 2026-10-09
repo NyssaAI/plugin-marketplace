@@ -8,9 +8,10 @@
       "name": "agent-skills",
       "source": {
         "source": "url",
-        "url": "https://github.com/NyssaAI/agent-skills.git"
+        "url": "https://github.com/NyssaAI/agent-skills.git",
+        "ref": "v0.6.1"
       },
-      "version": "0.6.0",
+      "version": "0.6.1",
       "policy": {
         "installation": "AVAILABLE"
       },
@@ -23,7 +24,9 @@
         "source": "url",
         "url": "https://github.com/NyssaAI/daily-tasks.git"
       },
-      "policy": { "installation": "AVAILABLE" },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
       "category": "Productivity"
     },
     {
