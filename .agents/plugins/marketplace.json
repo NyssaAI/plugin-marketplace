@@ -9,9 +9,9 @@
       "source": {
         "source": "url",
         "url": "https://github.com/NyssaAI/agent-skills.git",
-        "ref": "v0.6.1"
+        "ref": "v0.6.3"
       },
-      "version": "0.6.1",
+      "version": "0.6.3",
       "policy": {
         "installation": "AVAILABLE"
       },

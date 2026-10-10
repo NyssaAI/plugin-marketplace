@@ -10,12 +10,12 @@
   "plugins": [
     {
       "name": "agent-skills",
-      "version": "0.6.1",
+      "version": "0.6.3",
       "description": "Foundational skills and conventions for Jeremy and NyssaAI's AI agents.",
       "source": {
         "source": "url",
         "url": "https://github.com/NyssaAI/agent-skills.git",
-        "ref": "v0.6.1"
+        "ref": "v0.6.3"
       },
       "category": "productivity",
       "keywords": [
