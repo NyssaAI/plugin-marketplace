@@ -10,12 +10,12 @@
   "plugins": [
     {
       "name": "agent-skills",
-      "version": "0.6.3",
+      "version": "0.6.4",
       "description": "Foundational skills and conventions for Jeremy and NyssaAI's AI agents.",
       "source": {
         "source": "url",
         "url": "https://github.com/NyssaAI/agent-skills.git",
-        "ref": "v0.6.3"
+        "ref": "v0.6.4"
       },
       "category": "productivity",
       "keywords": [
@@ -27,10 +27,11 @@
     },
     {
       "name": "daily-tasks",
-      "version": "0.3.3",
+      "version": "0.3.5",
       "source": {
         "source": "url",
-        "url": "https://github.com/NyssaAI/daily-tasks.git"
+        "url": "https://github.com/NyssaAI/daily-tasks.git",
+        "ref": "v0.3.5"
       },
       "description": "Personal task management, milestones, delegation, daily plans and anytime check-ins using editable Markdown.",
       "author": {
@@ -47,10 +48,11 @@
     },
     {
       "name": "plugin-builder",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "source": {
         "source": "url",
-        "url": "https://github.com/NyssaAI/plugin-builder.git"
+        "url": "https://github.com/NyssaAI/plugin-builder.git",
+        "ref": "v0.1.1"
       },
       "description": "Build, review, and evaluate agent plugins from one maintained skill tree.",
       "author": {
