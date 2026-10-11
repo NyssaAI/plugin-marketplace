@@ -9,9 +9,9 @@
       "source": {
         "source": "url",
         "url": "https://github.com/NyssaAI/agent-skills.git",
-        "ref": "v0.6.3"
+        "ref": "v0.6.4"
       },
-      "version": "0.6.3",
+      "version": "0.6.4",
       "policy": {
         "installation": "AVAILABLE"
       },
@@ -19,10 +19,11 @@
     },
     {
       "name": "daily-tasks",
-      "version": "0.3.3",
+      "version": "0.3.5",
       "source": {
         "source": "url",
-        "url": "https://github.com/NyssaAI/daily-tasks.git"
+        "url": "https://github.com/NyssaAI/daily-tasks.git",
+        "ref": "v0.3.5"
       },
       "policy": {
         "installation": "AVAILABLE"
@@ -31,10 +32,11 @@
     },
     {
       "name": "plugin-builder",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "source": {
         "source": "url",
-        "url": "https://github.com/NyssaAI/plugin-builder.git"
+        "url": "https://github.com/NyssaAI/plugin-builder.git",
+        "ref": "v0.1.1"
       },
       "policy": {
         "installation": "AVAILABLE"
