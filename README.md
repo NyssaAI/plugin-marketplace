@@ -81,7 +81,7 @@ the listing does not grant repository access.
 | Plugin | Namespace / Install | Source | Description |
 | :--- | :--- | :--- | :--- |
 | **agent-skills 0.6.4** | `agent-skills@nyssaai` | [NyssaAI/agent-skills](https://github.com/NyssaAI/agent-skills) | Foundational skills and conventions, with explicit document-maturity metadata. |
-| **daily-tasks 0.3.5** | `daily-tasks@nyssaai` | [NyssaAI/daily-tasks](https://github.com/NyssaAI/daily-tasks) | Personal tasks, milestones, delegation, daily plans and anytime check-ins. Requires Node.js 22+. Release scope: Codex on Windows; other hosts unverified. |
+| **[daily-tasks 0.6.2](https://github.com/NyssaAI/daily-tasks/releases/tag/v0.6.2)** | `daily-tasks@nyssaai` | [NyssaAI/daily-tasks](https://github.com/NyssaAI/daily-tasks) | Personal tasks, milestones, delegation, daily plans and anytime check-ins. Requires Node.js 22+. Native host workflows remain unverified for this release. |
 | **plugin-builder 0.1.1** | `plugin-builder@nyssaai` | [NyssaAI/plugin-builder](https://github.com/NyssaAI/plugin-builder) (private) | Build, review, and evaluate agent plugins. Requires repository access. |
 | **compound-engineering** | `compound-engineering@nyssaai` | [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin) | Brainstorm, plan, debug, review, and compound learnings with AI agents. |
 | **compound-knowledge** | `compound-knowledge@nyssaai` | [EveryInc/compound-knowledge-plugin](https://github.com/EveryInc/compound-knowledge-plugin) | Knowledge compounds. Brainstorm, plan, review, execute, and save learnings in a markdown vault. |
