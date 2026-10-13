@@ -47,9 +47,10 @@
       "name": "compound-engineering",
       "source": {
         "source": "url",
-        "url": "https://github.com/EveryInc/compound-engineering-plugin.git"
+        "url": "https://github.com/EveryInc/compound-engineering-plugin.git",
+        "ref": "compound-engineering-v3.30.5"
       },
-      "version": "3.24.0",
+      "version": "3.30.5",
       "policy": {
         "installation": "AVAILABLE"
       },
@@ -60,9 +61,10 @@
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/EveryInc/compound-knowledge-plugin.git",
-        "path": "plugins/compound-knowledge"
+        "path": "plugins/compound-knowledge",
+        "sha": "766942e9eaee5204adbfe180f1d0651ffecf2575"
       },
-      "version": "1.1.0",
+      "version": "1.0.0",
       "policy": {
         "installation": "AVAILABLE"
       },

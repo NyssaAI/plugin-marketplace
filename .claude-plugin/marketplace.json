@@ -69,7 +69,7 @@
     },
     {
       "name": "compound-engineering",
-      "version": "3.24.0",
+      "version": "3.30.5",
       "description": "Brainstorm, plan, debug, review, and compound learnings with AI agents.",
       "author": {
         "name": "Kieran Klaassen and Trevin Chow"
@@ -77,7 +77,8 @@
       "homepage": "https://github.com/EveryInc/compound-engineering-plugin",
       "source": {
         "source": "url",
-        "url": "https://github.com/EveryInc/compound-engineering-plugin.git"
+        "url": "https://github.com/EveryInc/compound-engineering-plugin.git",
+        "ref": "compound-engineering-v3.30.5"
       },
       "category": "development",
       "keywords": [
@@ -90,16 +91,17 @@
     },
     {
       "name": "compound-knowledge",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "description": "Knowledge compounds. Brainstorm, plan, review, execute, and save what you learn, so the next cycle starts smarter.",
       "author": {
-        "name": "Austin Tedesco (Every)"
+        "name": "Austin Tedesco"
       },
       "homepage": "https://github.com/EveryInc/compound-knowledge-plugin",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/EveryInc/compound-knowledge-plugin.git",
-        "path": "plugins/compound-knowledge"
+        "path": "plugins/compound-knowledge",
+        "sha": "766942e9eaee5204adbfe180f1d0651ffecf2575"
       },
       "category": "productivity",
       "keywords": [
