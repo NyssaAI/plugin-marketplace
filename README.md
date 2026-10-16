@@ -44,7 +44,7 @@ or GitHub releases; its version comes from the manifest at the pinned commit.
 | :--- | :--- | :--- | :--- |
 | **agent-skills 0.6.4** | `agent-skills@nyssaai` | [v0.6.4](https://github.com/NyssaAI/agent-skills/releases/tag/v0.6.4) | Foundational skills and conventions, with explicit document-maturity metadata. |
 | **daily-tasks 0.6.2** | `daily-tasks@nyssaai` | [v0.6.2](https://github.com/NyssaAI/daily-tasks/releases/tag/v0.6.2) | Personal tasks, milestones, delegation, daily plans and anytime check-ins. Requires Node.js 22+. Native host workflows remain unverified for this release. |
-| **plugin-builder 0.1.1** | `plugin-builder@nyssaai` | [v0.1.1 (private)](https://github.com/NyssaAI/plugin-builder/releases/tag/v0.1.1) | Build, review, and evaluate agent plugins. Requires repository access. |
+| **plugin-builder 0.2.0** | `plugin-builder@nyssaai` | [v0.2.0 (private)](https://github.com/NyssaAI/plugin-builder/releases/tag/v0.2.0) | Architect, scaffold, author, package, and reorganize multi-host agent plugins. Requires repository access. |
 | **compound-engineering 3.30.5** | `compound-engineering@nyssaai` | [compound-engineering-v3.30.5](https://github.com/EveryInc/compound-engineering-plugin/releases/tag/compound-engineering-v3.30.5) | Brainstorm, plan, debug, review, and compound learnings with AI agents. |
 | **compound-knowledge 1.0.0** | `compound-knowledge@nyssaai` | [766942e](https://github.com/EveryInc/compound-knowledge-plugin/tree/766942e9eaee5204adbfe180f1d0651ffecf2575/plugins/compound-knowledge) | Brainstorm, plan, review, execute, and save learnings in a Markdown vault. |
 
