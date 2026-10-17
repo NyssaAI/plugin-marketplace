@@ -32,11 +32,11 @@
     },
     {
       "name": "plugin-builder",
-      "version": "0.2.0",
+      "version": "0.4.0",
       "source": {
         "source": "url",
         "url": "https://github.com/NyssaAI/plugin-builder.git",
-        "ref": "v0.2.0"
+        "ref": "v0.4.0"
       },
       "policy": {
         "installation": "AVAILABLE"
