@@ -48,13 +48,13 @@
     },
     {
       "name": "plugin-builder",
-      "version": "0.2.0",
+      "version": "0.4.0",
       "source": {
         "source": "url",
         "url": "https://github.com/NyssaAI/plugin-builder.git",
-        "ref": "v0.2.0"
+        "ref": "v0.4.0"
       },
-      "description": "Architect, scaffold, author, package, and reorganize multi-host agent plugins across Claude, Codex, Cursor, Antigravity, and Hermes.",
+      "description": "End-to-end framework to design, build and maintain plugins for several available agent harnesses. Includes a plugin authoring guidance, evaluation guidance, best practices and restructuring tools.",
       "author": {
         "name": "NyssaAI"
       },
