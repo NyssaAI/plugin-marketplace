@@ -36,23 +36,16 @@ See the [Claude Code plugin commands](https://code.claude.com/docs/en/plugins/cl
 
 ## Listed plugins
 
-Source versions checked on **2026-10-13**. The three NyssaAI entries and Compound
-Engineering match their latest published releases. Compound Knowledge has no tags
-or GitHub releases; its version comes from the manifest at the pinned commit.
+Source versions checked on **2026-10-13**. The three NyssaAI entries match their latest published releases.
 
 | Plugin | Install ID | Pinned source | Description |
 | :--- | :--- | :--- | :--- |
 | **agent-skills 0.6.4** | `agent-skills@nyssaai` | [v0.6.4](https://github.com/NyssaAI/agent-skills/releases/tag/v0.6.4) | Foundational skills and conventions, with explicit document-maturity metadata. |
 | **daily-tasks 0.7.0** | `daily-tasks@nyssaai` | [v0.7.0](https://github.com/NyssaAI/daily-tasks/releases/tag/v0.7.0) | Personal tasks, milestones, delegation, daily plans and anytime check-ins with editable Markdown and a consistent decision log. |
 | **plugin-builder 0.4.0** | `plugin-builder@nyssaai` | [v0.4.0 (private)](https://github.com/NyssaAI/plugin-builder/releases/tag/v0.4.0) | End-to-end framework to design, build, review, and maintain multi-host agent plugins. Requires repository access. |
-| **compound-engineering 3.30.5** | `compound-engineering@nyssaai` | [compound-engineering-v3.30.5](https://github.com/EveryInc/compound-engineering-plugin/releases/tag/compound-engineering-v3.30.5) | Brainstorm, plan, debug, review, and compound learnings with AI agents. |
-| **compound-knowledge 1.0.0** | `compound-knowledge@nyssaai` | [766942e](https://github.com/EveryInc/compound-knowledge-plugin/tree/766942e9eaee5204adbfe180f1d0651ffecf2575/plugins/compound-knowledge) | Brainstorm, plan, review, execute, and save learnings in a Markdown vault. |
 
 `plugin-builder` is publicly listed, but its repository is private. Installation
 requires GitHub authentication with access to `NyssaAI/plugin-builder`.
-
-The former Compound Knowledge listing advertised 1.1.0; upstream's plugin manifest
-declares 1.0.0. The catalog now matches upstream and pins the existing source commit.
 
 ## Validate the catalogs
 
