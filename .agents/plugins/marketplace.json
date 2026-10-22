@@ -42,6 +42,32 @@
         "installation": "AVAILABLE"
       },
       "category": "Development"
+    },
+    {
+      "name": "dev-standards",
+      "version": "0.4.1",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/NyssaAI/dev-standards.git",
+        "ref": "v0.4.1"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Development"
+    },
+    {
+      "name": "plan-product",
+      "version": "0.1.1",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/NyssaAI/product-planning.git",
+        "ref": "v0.1.1"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Productivity"
     }
   ]
 }

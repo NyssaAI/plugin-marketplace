@@ -36,16 +36,17 @@ See the [Claude Code plugin commands](https://code.claude.com/docs/en/plugins/cl
 
 ## Listed plugins
 
-Source versions checked on **2026-10-13**. The three NyssaAI entries match their latest published releases.
+Source versions checked on **2026-10-22**. Every listed entry is pinned to its published release.
 
 | Plugin | Install ID | Pinned source | Description |
 | :--- | :--- | :--- | :--- |
 | **agent-skills 0.6.4** | `agent-skills@nyssaai` | [v0.6.4](https://github.com/NyssaAI/agent-skills/releases/tag/v0.6.4) | Foundational skills and conventions, with explicit document-maturity metadata. |
 | **daily-tasks 0.7.0** | `daily-tasks@nyssaai` | [v0.7.0](https://github.com/NyssaAI/daily-tasks/releases/tag/v0.7.0) | Personal tasks, milestones, delegation, daily plans and anytime check-ins with editable Markdown and a consistent decision log. |
 | **plugin-builder 0.4.0** | `plugin-builder@nyssaai` | [v0.4.0 (private)](https://github.com/NyssaAI/plugin-builder/releases/tag/v0.4.0) | End-to-end framework to design, build, review, and maintain multi-host agent plugins. Requires repository access. |
+| **dev-standards 0.4.1** | `dev-standards@nyssaai` | [v0.4.1 (private)](https://github.com/NyssaAI/dev-standards/releases/tag/v0.4.1) | Independent C#, Go, and TypeScript development rules, executable examples, and conformance checkers. Requires repository access. |
+| **plan-product 0.1.1** | `plan-product@nyssaai` | [v0.1.1 (private)](https://github.com/NyssaAI/product-planning/releases/tag/v0.1.1) | Guided Markdown product planning for products, features, use cases, and roadmaps. Requires repository access. |
 
-`plugin-builder` is publicly listed, but its repository is private. Installation
-requires GitHub authentication with access to `NyssaAI/plugin-builder`.
+`plugin-builder`, `dev-standards`, and `plan-product` are publicly listed, but their repositories are private. Installation requires GitHub authentication with access to the corresponding NyssaAI repository.
 
 ## Validate the catalogs
 

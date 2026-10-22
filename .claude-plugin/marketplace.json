@@ -66,6 +66,50 @@
         "evaluation",
         "nyssa"
       ]
+    },
+    {
+      "name": "dev-standards",
+      "version": "0.4.1",
+      "description": "Independent C#, Go, and TypeScript development rules, executable examples, and conformance checkers.",
+      "author": {
+        "name": "NyssaAI"
+      },
+      "homepage": "https://github.com/NyssaAI/dev-standards",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/NyssaAI/dev-standards.git",
+        "ref": "v0.4.1"
+      },
+      "category": "development",
+      "keywords": [
+        "development-standards",
+        "csharp",
+        "go",
+        "typescript",
+        "logging",
+        "conformance"
+      ]
+    },
+    {
+      "name": "plan-product",
+      "version": "0.1.1",
+      "description": "Define products, features, use cases, and dependency-ordered product roadmaps through guided conversations.",
+      "author": {
+        "name": "NyssaAI"
+      },
+      "homepage": "https://github.com/NyssaAI/product-planning",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/NyssaAI/product-planning.git",
+        "ref": "v0.1.1"
+      },
+      "category": "productivity",
+      "keywords": [
+        "product-planning",
+        "features",
+        "use-cases",
+        "roadmaps"
+      ]
     }
   ]
 }
