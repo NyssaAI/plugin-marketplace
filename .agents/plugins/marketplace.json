@@ -45,11 +45,11 @@
     },
     {
       "name": "dev-standards",
-      "version": "0.4.1",
+      "version": "0.4.2",
       "source": {
         "source": "url",
         "url": "https://github.com/NyssaAI/dev-standards.git",
-        "ref": "v0.4.1"
+        "ref": "v0.4.2"
       },
       "policy": {
         "installation": "AVAILABLE"
@@ -58,11 +58,11 @@
     },
     {
       "name": "plan-product",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "source": {
         "source": "url",
         "url": "https://github.com/NyssaAI/product-planning.git",
-        "ref": "v0.1.1"
+        "ref": "v0.1.2"
       },
       "policy": {
         "installation": "AVAILABLE"
