@@ -92,7 +92,7 @@
     },
     {
       "name": "plan-product",
-      "version": "0.2.0",
+      "version": "0.12.0",
       "description": "Define products, features, use cases, domain concepts, and dependency-ordered product roadmaps through guided conversations.",
       "author": {
         "name": "NyssaAI"
@@ -101,15 +101,16 @@
       "source": {
         "source": "url",
         "url": "https://github.com/NyssaAI/product-planning.git",
-        "ref": "v0.2.0"
+        "ref": "v0.12.0"
       },
       "category": "productivity",
       "keywords": [
         "product-planning",
         "features",
         "use-cases",
+        "roadmaps",
         "concepts",
-        "roadmaps"
+        "application-flows"
       ]
     }
   ]
