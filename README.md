@@ -4,7 +4,7 @@ NyssaAI plugins are created for knowledge work in the agentic era. They augment 
 
 We built this suite to help us plan our days, stay on task, and accelerate the work we do. The plugins include:
 
-## **agent-skills 0.7.0**
+## **agent-skills**
 
 Give your agent reliable ways to work with the notes, source records, and documents you already maintain. It is especially useful in a PARA workspace, where organization, history, and links need to stay intact. It can operate outside of a PARA vault as well
 
@@ -12,7 +12,7 @@ Give your agent reliable ways to work with the notes, source records, and docume
 - `para-vault`: Manage a PARA vault: classify and file captures, process inboxes, reconcile and revise documents, review navigation and links, archive or reactivate projects, and ingest email/calendar records.
 - `write-like-me`: Draft or rewrite material in the user's authentic writing voice, and establish, inspect, calibrate, or update writing voice profiles.
 
-## **daily-tasks 0.9.1**
+## **daily-tasks**
 
 Turn projects, milestones, and commitments into an editable Markdown system you can review with your agent. It helps you keep work visible and moving without asking the agent to invent your priorities or schedule every minute of your day.
 
@@ -23,7 +23,7 @@ Turn projects, milestones, and commitments into an editable Markdown system you 
 - `daily-tasks-records`: Create and update projects, milestones, tasks, ownership, dependencies, and blockers consistently.
 - `daily-tasks-setup`: Set the identity, timezone, priorities, and storage locations the system uses for your planning workspace.
 
-## **plan-product 0.12.0**
+## **plan-product**
 
 Turn a product idea into a linked set of plain-language planning documents your team can use. The plugin guides the conversation from initial discovery through the delivery roadmap, while keeping product decisions separate from implementation details. It uses a fascade-style and routes tasks to context-aware workflows that will build a complete implementation roadmap from a duscussion, while also conserving context.
 
