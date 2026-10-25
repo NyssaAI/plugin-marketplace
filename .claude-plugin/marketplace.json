@@ -27,11 +27,11 @@
     },
     {
       "name": "daily-tasks",
-      "version": "0.7.0",
+      "version": "0.9.1",
       "source": {
         "source": "url",
         "url": "https://github.com/NyssaAI/daily-tasks.git",
-        "ref": "v0.7.0"
+        "ref": "v0.9.1"
       },
       "description": "Personal tasks, milestones, delegation, daily plans and anytime check-ins with editable Markdown and a consistent decision log.",
       "author": {
