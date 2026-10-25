@@ -4,18 +4,13 @@ NyssaAI plugins are created for knowledge work in the agentic era. They augment 
 
 We built this suite to help us plan our days, stay on task, and accelerate the work we do. The plugins include:
 
-## **agent-skills 0.6.4**
+## **agent-skills 0.7.0**
 
 Give your agent reliable ways to work with the notes, source records, and documents you already maintain. It is especially useful in a PARA workspace, where organization, history, and links need to stay intact. It can operate outside of a PARA vault as well
 
-- `file-para-content`: If you use a PARA-style vault, this skill will help move files into the correct PARA folders. 
-- `import-vault-source-records`: File email records and calendar invitations without losing source details such as cancellations, organizer updates, or event dates.
-- `maintain-vault-navigation`: Check and repair indexes, maps, registers, and links so your vault stays easy to navigate.
-- `maintain-writing-voice`: Establish and refine the writing guidance your agent uses when it writes on your behalf.
-- `manage-file-operations`: Move, rename, copy, import, or archive files safely while repairing the references those changes affect.
-- `manage-vault-lifecycle`: Archive inactive notes, records, or projects and restore them later with their context and navigation intact.
-- `revise-vault-documents`: Reconcile overlapping documents, preserve accepted history, and prepare substantive revisions for your approval.
-- `write-in-user-voice`: Draft messages, posts, and documents in your voice while preserving the facts and intent you supplied.
+- `manage-file-operations`: Safely move, rename, copy, import, or archive existing content, resolve collisions, and resume interrupted operations while repairing references.
+- `para-vault`: Manage a PARA vault: classify and file captures, process inboxes, reconcile and revise documents, review navigation and links, archive or reactivate projects, and ingest email/calendar records.
+- `write-like-me`: Draft or rewrite material in the user's authentic writing voice, and establish, inspect, calibrate, or update writing voice profiles.
 
 ## **daily-tasks 0.9.1**
 
