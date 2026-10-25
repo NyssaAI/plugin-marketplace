@@ -47,50 +47,6 @@
       ]
     },
     {
-      "name": "plugin-builder",
-      "version": "0.4.0",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/NyssaAI/plugin-builder.git",
-        "ref": "v0.4.0"
-      },
-      "description": "End-to-end framework to design, build and maintain plugins for several available agent harnesses. Includes a plugin authoring guidance, evaluation guidance, best practices and restructuring tools.",
-      "author": {
-        "name": "NyssaAI"
-      },
-      "homepage": "https://github.com/NyssaAI/plugin-builder",
-      "category": "development",
-      "keywords": [
-        "plugins",
-        "skills",
-        "evaluation",
-        "nyssa"
-      ]
-    },
-    {
-      "name": "dev-standards",
-      "version": "0.4.2",
-      "description": "Independent C#, Go, and TypeScript development rules, executable examples, and conformance checkers.",
-      "author": {
-        "name": "NyssaAI"
-      },
-      "homepage": "https://github.com/NyssaAI/dev-standards",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/NyssaAI/dev-standards.git",
-        "ref": "v0.4.2"
-      },
-      "category": "development",
-      "keywords": [
-        "development-standards",
-        "csharp",
-        "go",
-        "typescript",
-        "logging",
-        "conformance"
-      ]
-    },
-    {
       "name": "plan-product",
       "version": "0.12.0",
       "description": "Define products, features, use cases, domain concepts, and dependency-ordered product roadmaps through guided conversations.",
