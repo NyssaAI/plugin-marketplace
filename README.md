@@ -6,34 +6,34 @@ We built this suite to help us plan our days, stay on task, and accelerate the w
 
 ## **agent-skills**
 
-Give your agent reliable ways to work with the notes, source records, and documents you already maintain. It is especially useful in a PARA workspace, where organization, history, and links need to stay intact. It can operate outside of a PARA vault as well
+Give your agent reliable, non-destructive tools to work with files. Helps maintain organization, links, and history across both general workspaces and structured PARA vaults. Ait also has a write-like-me skill to improve your agents' writing.
 
-- `manage-file-operations`: Safely move, rename, copy, import, or archive existing content, resolve collisions, and resume interrupted operations while repairing references.
-- `para-vault`: Manage a PARA vault: classify and file captures, process inboxes, reconcile and revise documents, review navigation and links, archive or reactivate projects, and ingest email/calendar records.
-- `write-like-me`: Draft or rewrite material in the user's authentic writing voice, and establish, inspect, calibrate, or update writing voice profiles.
+- `manage-file-operations`: Move, rename, copy, import, or archive files and directories safely. It handles naming collisions, repairs relative links and parent indexes, and resumes interrupted operations without data loss.
+- `para-vault`: Organize knowledge across Projects, Areas, Resources, and Archives. It orchestrates inbox filing, immutable email and calendar record ingestion, document reconciliation, navigation audits, and project archiving.
+- `write-like-me`: Draft or rewrite material in your authentic writing voice, and build, calibrate, or update personal voice profiles backed by real writing samples.
 
 ## **daily-tasks**
 
-Turn projects, milestones, and commitments into an editable Markdown system you can review with your agent. It helps you keep work visible and moving without asking the agent to invent your priorities or schedule every minute of your day.
+Turn your projects into a plan for your day using an editable Markdown system you review with your agent. It keeps work visible and moving forward without asking an agent to guess your priorities or schedule your day.
 
-- `daily-tasks`: Coordinate the full workflow for projects, tasks, blockers, daily plans, and anytime check-ins.
-- `daily-tasks-capture`: Turn action items from notes or messages into candidates for your approval, rather than silently creating new commitments.
-- `daily-tasks-checkin`: Reconcile progress and manual edits, work through unresolved items, and open or update the plan for today.
-- `daily-tasks-plan`: Create or edit a daily Markdown plan and carry unfinished selected work forward without ranking it or assigning time slots.
-- `daily-tasks-records`: Create and update projects, milestones, tasks, ownership, dependencies, and blockers consistently.
-- `daily-tasks-setup`: Set the identity, timezone, priorities, and storage locations the system uses for your planning workspace.
+- `daily-tasks`: Coordinate the complete planning lifecycle, routing between setup, capture, records, daily plans, and check-ins.
+- `daily-tasks-capture`: Extract potential action items from notes or messages and present them as candidates for explicit approval before creating commitments.
+- `daily-tasks-checkin`: Review daily progress, reconcile manual Markdown edits, resolve blockers, and roll open work into today's plan.
+- `daily-tasks-plan`: Build and update a daily Markdown plan, carrying unfinished selections forward without forcing rigid time slots or artificial ranking.
+- `daily-tasks-records`: Create and update projects, milestones, tasks, ownership, dependencies, and external blockers with an authoritative audit log.
+- `daily-tasks-setup`: Configure personal identity, timezone, priority criteria, and workspace storage locations in canonical profile files.
 
 ## **plan-product**
 
-Turn a product idea into a linked set of plain-language planning documents your team can use. The plugin guides the conversation from initial discovery through the delivery roadmap, while keeping product decisions separate from implementation details. It uses a fascade-style and routes tasks to context-aware workflows that will build a complete implementation roadmap from a duscussion, while also conserving context.
+Turn product ideas into a linked set of plain-language planning documents your team can build from. The plugin guides discussions from initial discovery through delivery roadmaps, keeping user outcomes and business capabilities cleanly separated from technical architecture and implementation details. It uses a facade orchestrator that routes requests to context-aware workflows to build a complete roadmap while conserving agent context.
 
-- `plan-product`: Define the product, domain concepts, features, actor use cases, macro-flows, and a dependency-ordered roadmap with verification checkpoints.
-  - Product Discovery & Inventory: Define the product and establish its core planning documents.
-  - Concept & Macro-Flow Specification: Model domain concepts and cross-feature flows.
-  - Feature Specification: Define feature boundaries and acceptance checks.
-  - Use Case Specification: Map an actor's path through a feature.
-  - Roadmap Sequencing: Order delivery steps, dependencies, and verification checkpoints.
-  - Maintenance & Upgrade: Reconcile or upgrade existing planning documents.
+- `plan-product`: Define products, domain concepts, features, actor use cases, and dependency-ordered roadmaps under Model v2:
+  - Product Discovery (`/plan-product`): Define core product framing (`product.md`), capability inventory (`features.md`), and technical architecture context (`tech-stack.md`).
+  - Domain Concepts (`/plan-concept`): Model core domain concepts, entities, and cross-feature macro-flows with sequential IDs (`C-nn`).
+  - Feature Boundaries (`/plan-feature`): Define functional boundaries, user outcomes, and acceptance checks (`F-gg.nn`).
+  - Use Cases (`/plan-use-case`): Map concrete actor workflows, entry points, and branch conditions through a feature (`UC-gg.nn.uu`).
+  - Delivery Roadmap (`/plan-roadmap`): Sequence ordered delivery phases and steps (`R-pp.ss`) with explicit `- Verify:` checkpoints.
+  - Maintenance & Upgrades (`/plan-maintain`): Audit documentation links, reconcile models, and migrate legacy planning documents to Model v2.
 
 ## Install with Codex
 
@@ -75,7 +75,7 @@ node --test
 claude plugin validate . --strict
 ```
 
-The tests check catalog parity, unique entries, pinned sources, and README versions. When Codex
+The tests check catalog parity, unique entries, pinned sources, and README plugin coverage. When Codex
 is installed, they also verify discovery in a temporary profile and remove that profile afterward.
 Set `CODEX_CLI_JS` to the installed `@openai/codex/bin/codex.js` if it is not under Windows
 APPDATA. Otherwise the discovery test is skipped. CLI commands were checked with Codex 0.162.1
@@ -86,7 +86,7 @@ and Claude Code 2.1.296. These checks do not certify plugin installation or nati
 1. Check upstream releases and read the plugin manifest at the selected tag. If no release exists,
    use an exact commit and its declared version.
 2. Update `.claude-plugin/marketplace.json`, `.agents/plugins/marketplace.json`, and the plugin
-   headings above together. Keep names, versions, source URLs, paths, and pins identical.
+   documentation above together. Keep names, source URLs, paths, and pins identical across catalogs.
 3. Use `source: "url"` for repository-root plugins or `git-subdir` with `path` for subdirectory
    plugins. Pin release tags with `ref`, or exact commits with `sha`. Codex listing output calls
    root Git sources `git`; do not copy that discriminator into the catalog. See the

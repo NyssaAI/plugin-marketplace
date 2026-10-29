@@ -23,8 +23,8 @@ test('host catalogs agree on unique, versioned, pinned plugin sources', async ()
       if (plugin.source.ref) assert.ok(plugin.source.ref.endsWith(`v${plugin.version}`),
         `${plugin.name} release tag must match its version`);
       if (plugin.source.source === 'git-subdir') assert.ok(plugin.source.path, plugin.name);
-      assert.ok(readme.includes(`**${plugin.name} ${plugin.version}**`),
-        `${plugin.name} README version must match the catalogs`);
+      assert.ok(readme.includes(`**${plugin.name}**`),
+        `${plugin.name} must be documented in README`);
     }
   }
   const sources = catalog => catalog.plugins.map(({name, version, source}) => ({name, version, source}))
