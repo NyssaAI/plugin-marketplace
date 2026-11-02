@@ -1,0 +1,135 @@
+name: Sync marketplace catalog with plugin releases
+
+on:
+  repository_dispatch:
+    types: [plugin-release]
+  workflow_dispatch:
+  schedule:
+    - cron: '*/30 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.NYSSA_AI_MARKETPLACE_TOKEN || github.token }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Sync latest pinned release tags from upstream plugin repositories
+        env:
+          GH_TOKEN: ${{ secrets.NYSSA_AI_MARKETPLACE_TOKEN || github.token }}
+        run: |
+          python3 - <<'PY'
+          import base64
+          from datetime import date
+          import json
+          from pathlib import Path
+          import re
+          import subprocess
+
+          SEMVER_TAG_RE = re.compile(r"^v(\d+)\.(\d+)\.(\d+)$")
+          REPO_URL_RE = re.compile(r"github\.com[:/]([^/]+/[^/.]+?)(?:\.git)?$")
+
+          def gh_json(endpoint: str):
+              res = subprocess.run(
+                  ["gh", "api", endpoint],
+                  capture_output=True,
+                  text=True,
+                  check=False,
+              )
+              if res.returncode != 0:
+                  return None
+              return json.loads(res.stdout)
+
+          def latest_verified_tag(repo: str) -> tuple[str, str] | None:
+              tags = gh_json(f"repos/{repo}/tags?per_page=100")
+              if not isinstance(tags, list):
+                  return None
+              candidates: list[tuple[tuple[int, int, int], str, str]] = []
+              for item in tags:
+                  tag_name = item.get("name", "")
+                  m = SEMVER_TAG_RE.match(tag_name)
+                  if m:
+                      ver_tuple = (int(m.group(1)), int(m.group(2)), int(m.group(3)))
+                      ver_str = f"{m.group(1)}.{m.group(2)}.{m.group(3)}"
+                      candidates.append((ver_tuple, ver_str, tag_name))
+              candidates.sort(reverse=True)
+              for _, ver_str, tag_name in candidates:
+                  for manifest_path in ("plugin.json", ".claude-plugin/plugin.json"):
+                      meta = gh_json(f"repos/{repo}/contents/{manifest_path}?ref={tag_name}")
+                      if isinstance(meta, dict) and "content" in meta:
+                          raw = base64.b64decode(meta["content"]).decode("utf-8")
+                          manifest = json.loads(raw)
+                          if manifest.get("version") == ver_str:
+                              return ver_str, tag_name
+              return None
+
+          claude_path = Path(".claude-plugin/marketplace.json")
+          codex_path = Path(".agents/plugins/marketplace.json")
+          readme_path = Path("README.md")
+
+          claude = json.loads(claude_path.read_text(encoding="utf-8"))
+          codex = json.loads(codex_path.read_text(encoding="utf-8"))
+          readme = readme_path.read_text(encoding="utf-8")
+
+          updated: list[str] = []
+          for plugin in claude.get("plugins", []):
+              name = plugin["name"]
+              url = plugin.get("source", {}).get("url", "")
+              m = REPO_URL_RE.search(url)
+              if not m:
+                  continue
+              repo = m.group(1)
+              resolved = latest_verified_tag(repo)
+              if not resolved:
+                  continue
+              new_version, new_ref = resolved
+              old_version = plugin.get("version")
+              old_ref = plugin.get("source", {}).get("ref")
+              if new_version != old_version or new_ref != old_ref:
+                  plugin["version"] = new_version
+                  plugin["source"]["ref"] = new_ref
+                  for codex_plugin in codex.get("plugins", []):
+                      if codex_plugin.get("name") == name:
+                          codex_plugin["version"] = new_version
+                          codex_plugin["source"]["ref"] = new_ref
+                  readme = readme.replace(f"**{name} {old_version}**", f"**{name} {new_version}**")
+                  readme = readme.replace(
+                      f"[{old_ref}](https://github.com/{repo}/releases/tag/{old_ref})",
+                      f"[{new_ref}](https://github.com/{repo}/releases/tag/{new_ref})",
+                  )
+                  updated.append(f"{name} {old_version} -> {new_version}")
+
+          if updated:
+              today = date.today().isoformat()
+              readme = re.sub(
+                  r"Source versions checked on \*\*\d{4}-\d{2}-\d{2}\*\*\.",
+                  f"Source versions checked on **{today}**.",
+                  readme,
+              )
+              claude_path.write_text(json.dumps(claude, indent=2) + "\n", encoding="utf-8")
+              codex_path.write_text(json.dumps(codex, indent=2) + "\n", encoding="utf-8")
+              readme_path.write_text(readme, encoding="utf-8")
+              print("Updated:", ", ".join(updated))
+          else:
+              print("All marketplace entries are already at their latest release tags.")
+          PY
+      - name: Validate catalogs
+        run: node --test
+      - name: Commit and push catalog updates
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add .claude-plugin/marketplace.json .agents/plugins/marketplace.json README.md
+            git commit -m "chore: auto-sync marketplace catalog to latest release tags"
+            git push origin HEAD:main
+          fi
