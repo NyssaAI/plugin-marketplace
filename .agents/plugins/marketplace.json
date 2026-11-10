@@ -19,11 +19,11 @@
     },
     {
       "name": "daily-tasks",
-      "version": "0.9.3",
+      "version": "0.10.1",
       "source": {
         "source": "url",
         "url": "https://github.com/NyssaAI/daily-tasks.git",
-        "ref": "v0.9.3"
+        "ref": "v0.10.1"
       },
       "policy": {
         "installation": "AVAILABLE"
