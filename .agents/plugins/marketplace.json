@@ -19,11 +19,11 @@
     },
     {
       "name": "daily-tasks",
-      "version": "0.11.0",
+      "version": "0.11.1",
       "source": {
         "source": "url",
         "url": "https://github.com/NyssaAI/daily-tasks.git",
-        "ref": "v0.11.0"
+        "ref": "v0.11.1"
       },
       "policy": {
         "installation": "AVAILABLE"
@@ -32,11 +32,11 @@
     },
     {
       "name": "plan-product",
-      "version": "0.12.5",
+      "version": "0.12.6",
       "source": {
         "source": "url",
         "url": "https://github.com/NyssaAI/product-planning.git",
-        "ref": "v0.12.5"
+        "ref": "v0.12.6"
       },
       "policy": {
         "installation": "AVAILABLE"
