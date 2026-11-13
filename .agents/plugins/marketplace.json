@@ -32,11 +32,11 @@
     },
     {
       "name": "plan-product",
-      "version": "0.12.7",
+      "version": "0.12.8",
       "source": {
         "source": "url",
         "url": "https://github.com/NyssaAI/product-planning.git",
-        "ref": "v0.12.7"
+        "ref": "v0.12.8"
       },
       "policy": {
         "installation": "AVAILABLE"
